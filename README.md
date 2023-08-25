@@ -1,14 +1,16 @@
 # :ship: Parostatkiem z Appwrite, Twilio i .NET
 Jakiś czas temu natrafiłem na ciekawy [artykuł](https://dev.to/adityaoberai/rick-roll-your-friends-using-appwrite-twilio-and-net-4180) w którym autor opisał jak za pomocą Appwrite, Twilio i .NET stworzyć aplikację, która dzwoni na wybrany numer i puszcza Rick Rolla. Postanowiłem przerobić ją tak aby puszczała hit Krzysztofa Krawczyka - Parostatek. 
 
-## Efekt końcowy
+## :notes: Efekt końcowy
 Ze względu na darmowe konto Twilio tuż przed uruchomieniem kodu prezentowany jest komunikat.
 
 https://github.com/kjurkiew/Parostatkiem/assets/35111684/5b8bed56-8c8b-44b1-a77a-00e33d78b0e3
 
-## Warunki wstępne
+## :page_with_curl: Warunki wstępne
 **Serwer** - Postawiłem na [mikr.us](https://mikr.us/?r=c9545d98) i serwer 3.0. Wymogiem do sprawnego działania Appwrite jest co najmniej 2 GB ramu
+
 **Docker** - Zainstalowałem go korzystając z [dokumentacji dockera](https://docs.docker.com/engine/install/ubuntu/)
+
 **Appwrite** - Cały poradnik jest na [stronie Appwrite](https://appwrite.io/docs/self-hosting#installWithDocker), w dużym skrócie wystarczy wpisać:
 ```
 docker run -it --rm \
@@ -35,7 +37,7 @@ docker-compose up -d
 ```
 ***Twilio*** - należy zarejestrować się na stronie [Twilio](https://www.twilio.com/try-twilio) gdzie otrzymamy darmowe konto oraz numer telefonu. Z darmowego konta możemy dzwonić tylko na zweryfikowane numery telefonów. Trzeba też pamiętać aby pozwolić aplikacji dzwonić do naszego kraju. Całość można ustawić [tutaj](https://www.twilio.com/console/voice/settings/geo-permissions)
 
-## Konfigurowanie Appwrite
+## :wrench: Konfigurowanie Appwrite
 Aby utworzyć funkcję w Appwrite, która pozwoli nam na "rejs parostatkiem", potrzebujemy najpierw zalogować się do interfejsu CLI Appwrite za pomocą polecenia:
 ```
 appwrite login
@@ -60,7 +62,7 @@ appwrite init function
 ✓ Success
 ```
 
-## Tworzenie funkcji
+## :bookmark_tabs: Tworzenie funkcji
 Odwiedź utworzony katalog *functions/Parostatek* Struktura plików wygląda w nim następująco:
 
 ```
@@ -144,7 +146,7 @@ Ostatnią rzeczą, którą musimy zrobić, zanim będziemy mogli przetestować f
 
 Wszystko już gotowe!
 
-## Uruchomienie funkcji
+## :calling: Uruchomienie funkcji
 Wybieramy *Execute now* i wpisujemy
 ```
 {
