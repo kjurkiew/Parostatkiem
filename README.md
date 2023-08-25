@@ -7,7 +7,7 @@ Ze względu na darmowe konto Twilio tuż przed uruchomieniem kodu prezentowany j
 https://github.com/kjurkiew/Parostatkiem/assets/35111684/5b8bed56-8c8b-44b1-a77a-00e33d78b0e3
 
 ## :page_with_curl: Warunki wstępne
-**Serwer** - Postawiłem na [mikr.us](https://mikr.us/?r=c9545d98) i serwer 3.0. Wymogiem do sprawnego działania Appwrite jest co najmniej 2 GB ramu
+**Serwer** - Postawiłem na [mikr.us](https://mikr.us/?r=c9545d98) wybierając serwer 3.0. Wymogiem do sprawnego działania Appwrite jest co najmniej 2 GB ramu
 
 **Docker** - Zainstalowałem go korzystając z [dokumentacji dockera](https://docs.docker.com/engine/install/ubuntu/)
 
