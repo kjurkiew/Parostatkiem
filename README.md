@@ -4,10 +4,7 @@ Jakiś czas temu natrafiłem na ciekawy [artykuł](https://dev.to/adityaoberai/r
 ## Efekt końcowy
 Ze względu na darmowe konto Twilio tuż przed uruchomieniem kodu prezentowany jest komunikat.
 
-
-https://github.com/kjurkiew/RickRoll/assets/35111684/bfc4d3f3-678d-4c37-a0b9-41eb487c7ffd
-
-
+https://github.com/kjurkiew/Parostatkiem/assets/35111684/5b8bed56-8c8b-44b1-a77a-00e33d78b0e3
 
 ## Warunki wstępne
 **Serwer** - Postawiłem na [mikr.us](https://mikr.us/?r=c9545d98) i serwer 3.0. Wymogiem do sprawnego działania Appwrite jest co najmniej 2 GB ramu
