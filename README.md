@@ -1,5 +1,5 @@
-# RickRoll z Appwrite, Twilio i .NET
-Jakiś czas temu natrafiłem na ciekawy [artykuł](https://dev.to/adityaoberai/rick-roll-your-friends-using-appwrite-twilio-and-net-4180) w którym autor opisał jak za pomocą Appwrite, Twilio i .NET stworzyć aplikację, która dzwoni na wybrany numer i puszcza Rick Rolla. 
+# :ship: Parostatkiem z Appwrite, Twilio i .NET
+Jakiś czas temu natrafiłem na ciekawy [artykuł](https://dev.to/adityaoberai/rick-roll-your-friends-using-appwrite-twilio-and-net-4180) w którym autor opisał jak za pomocą Appwrite, Twilio i .NET stworzyć aplikację, która dzwoni na wybrany numer i puszcza Rick Rolla. Postanowiłem przerobić ją tak aby puszczała hit Krzysztofa Krawczyka - Parostatek. 
 
 ## Efekt końcowy
 Ze względu na darmowe konto Twilio tuż przed uruchomieniem kodu prezentowany jest komunikat.
@@ -128,6 +128,8 @@ Bądź manualnie. W tym celu otwieramy katalog w którym znajduje się nasza fun
 ```
 tar -czf code.tar.gz --exclude code.tar.gz .
 ```
+
+
 Wchodzimy na naszą stronę, wybieramy projekt *Rick*, funkcję *Roll* i klikamy "+Create deployment"
 ![2](https://github.com/kjurkiew/RickRoll/assets/35111684/34368493-c7c2-4a3d-aca8-4533c3c7e460)
 W Entrypoint wpisujemy:
@@ -157,21 +159,18 @@ I możemy cieszyć się Rick Rollem :D
 Odpowiedź z Twilio SDK znajdziemy w logach funkcji
 
 
-Oczywiście, mogę dodać entery, aby poprawić czytelność tego tekstu. Oto on z dodanymi entrami:
-
-
 {
   "twilioResponse": {
-    "Sid": "CA1f810e5fd5e83cc193467892abaf9323",
+    "Sid": "CA1f810e5fd5e83cc193467...",
     "DateCreated": null,
     "DateUpdated": null,
     "ParentCallSid": null,
-    "AccountSid": "AC1b5daa43642bf69ad6dc906acfa2ae40",
+    "AccountSid": "...",
     "To": "+48791774028",
-    "ToFormatted": "+48791774028",
-    "From": "+12184525884",
-    "FromFormatted": "(218) 452-5884",
-    "PhoneNumberSid": "PN587d187e81ce586d7cad161ff2d5598d",
+    "ToFormatted": "+48123456789",
+    "From": "+1218452...",
+    "FromFormatted": "(218) 452-...",
+    "PhoneNumberSid": "PN58...",
     "Status": [],
     "StartTime": null,
     "EndTime": null,
@@ -186,18 +185,18 @@ Oczywiście, mogę dodać entery, aby poprawić czytelność tego tekstu. Oto on
     "CallerName": null,
     "QueueTime": "0",
     "TrunkSid": null,
-    "Uri": "/2010-04-01/Accounts/AC1b5daa43642bf69ad6dc906acfa2ae40/Calls/CA1f810e5fd5e83cc193467892abaf9323.json",
+    "Uri": "/2010-04-01/Accounts/....json",
     "SubresourceUris": {
-      "feedback": "/2010-04-01/Accounts/AC1b5daa43642bf69ad6dc906acfa2ae40/Calls/CA1f810e5fd5e83cc193467892abaf9323/Feedback.json",
-      "user_defined_messages": "/2010-04-01/Accounts/AC1b5daa43642bf69ad6dc906acfa2ae40/Calls/CA1f810e5fd5e83cc193467892abaf9323/UserDefinedMessages.json",
-      "notifications": "/2010-04-01/Accounts/AC1b5daa43642bf69ad6dc906acfa2ae40/Calls/CA1f810e5fd5e83cc193467892abaf9323/Notifications.json",
-      "recordings": "/2010-04-01/Accounts/AC1b5daa43642bf69ad6dc906acfa2ae40/Calls/CA1f810e5fd5e83cc193467892abaf9323/Recordings.json",
-      "streams": "/2010-04-01/Accounts/AC1b5daa43642bf69ad6dc906acfa2ae40/Calls/CA1f810e5fd5e83cc193467892abaf9323/Streams.json",
-      "payments": "/2010-04-01/Accounts/AC1b5daa43642bf69ad6dc906acfa2ae40/Calls/CA1f810e5fd5e83cc193467892abaf9323/Payments.json",
-      "user_defined_message_subscriptions": "/2010-04-01/Accounts/AC1b5daa43642bf69ad6dc906acfa2ae40/Calls/CA1f810e5fd5e83cc193467892abaf9323/UserDefinedMessageSubscriptions.json",
-      "siprec": "/2010-04-01/Accounts/AC1b5daa43642bf69ad6dc906acfa2ae40/Calls/CA1f810e5fd5e83cc193467892abaf9323/Siprec.json",
-      "events": "/2010-04-01/Accounts/AC1b5daa43642bf69ad6dc906acfa2ae40/Calls/CA1f810e5fd5e83cc193467892abaf9323/Events.json",
-      "feedback_summaries": "/2010-04-01/Accounts/AC1b5daa43642bf69ad6dc906acfa2ae40/Calls/FeedbackSummary.json"
+      "feedback": "/2010-04-01/Accounts/.../Feedback.json",
+      "user_defined_messages": "/2010-04-01/Accounts/.../UserDefinedMessages.json",
+      "notifications": "/2010-04-01/Accounts/.../Notifications.json",
+      "recordings": "/2010-04-01/Accounts/.../Recordings.json",
+      "streams": "/2010-04-01/Accounts/.../Streams.json",
+      "payments": "/2010-04-01/Accounts/.../Payments.json",
+      "user_defined_message_subscriptions": "/2010-04-01/Accounts/.../UserDefinedMessageSubscriptions.json",
+      "siprec": "/2010-04-01/Accounts/.../Siprec.json",
+      "events": "/2010-04-01/Accounts/.../Events.json",
+      "feedback_summaries": "/2010-04-01/Accounts/.../Calls/FeedbackSummary.json"
     }
   }
 }
