@@ -169,7 +169,7 @@ Odpowiedź z Twilio SDK znajdziemy w logach funkcji
     "DateUpdated": null,
     "ParentCallSid": null,
     "AccountSid": "...",
-    "To": "+48791774028",
+    "To": "+48123456789",
     "ToFormatted": "+48123456789",
     "From": "+1218452...",
     "FromFormatted": "(218) 452-...",
