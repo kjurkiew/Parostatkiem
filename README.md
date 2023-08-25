@@ -39,7 +39,7 @@ docker-compose up -d
 ***Twilio*** - należy zarejestrować się na stronie [Twilio](https://www.twilio.com/try-twilio) gdzie otrzymamy darmowe konto oraz numer telefonu. Z darmowego konta możemy dzwonić tylko na zweryfikowane numery telefonów. Trzeba też pamiętać aby pozwolić aplikacji dzwonić do naszego kraju. Całość można ustawić [tutaj](https://www.twilio.com/console/voice/settings/geo-permissions)
 
 ## Konfigurowanie Appwrite
-Aby utworzyć funkcję w Appwrite, która pozwoli nam na RickRollowanie telefonu, potrzebujemy najpierw zalogować się do interfejsu CLI Appwrite za pomocą polecenia:
+Aby utworzyć funkcję w Appwrite, która pozwoli nam na "rejs parostatkiem", potrzebujemy najpierw zalogować się do interfejsu CLI Appwrite za pomocą polecenia:
 ```
 appwrite login
 ? Enter your email adres@mailowy.com
@@ -50,24 +50,24 @@ Następnie tworzymy nowy projekt Appwrite za pomocą polecenia:
 ```
 appwrite init project
 ? How would you like to start? Create a new Appwrite project
-? What would you like to name your project? Projekt Rick
+? What would you like to name your project? Projekt Krzysztof
 ? What ID would you like to have for your project? unique()
 ✓ Success
 ```
 Inicjujemy funkcję wybierając środowisko wykonawcze .NET 6.0:
 ```
 appwrite init function
-? What would you like to name your function? Roll
+? What would you like to name your function? Parostatek
 ? What ID would you like to have for your function? unique()
 ? What runtime would you like to use? .NET (dotnet-6.0)
 ✓ Success
 ```
 
 ## Tworzenie funkcji
-Odwiedź utworzony katalog functions/Roll. Struktura plików wygląda w nim następująco:
+Odwiedź utworzony katalog *functions/Parostatek* Struktura plików wygląda w nim następująco:
 
 ```
-Roll
+Parostatek
 ├── Function.csproj 
 |
 └── src
@@ -100,7 +100,7 @@ public async Task<RuntimeResponse> Main(RuntimeRequest req, RuntimeResponse res)
   var call = CallResource.Create(
                 to: new PhoneNumber(toPhoneNumber),
                 from: new PhoneNumber(twilioPhoneNumber),
-                twiml: new Twiml("<Response><Play>https://demo.twilio.com/docs/classic.mp3</Play></Response>") 
+                twiml: new Twiml("<Response><Play>https://magenta-iguana-8031.twil.io/assets/01%20Krzysztof%20Krawczyk%20-%20Parostatek.mp3</Play></Response>") 
              );
 
   // Zwróć odpowiedź z biblioteki SDK Twilio.
@@ -124,13 +124,13 @@ Funkcję możemy wdrożyć za pomocą konsoli i polecenia
 ```
 appwrite deploy function
 ```
-Bądź manualnie. W tym celu otwieramy katalog w którym znajduje się nasza funkcja *Roll* i pakujemy ją za pomocą polecenia:
+Bądź manualnie. W tym celu otwieramy katalog w którym znajduje się nasza funkcja *Parostatek* i pakujemy ją za pomocą polecenia:
 ```
 tar -czf code.tar.gz --exclude code.tar.gz .
 ```
 
 
-Wchodzimy na naszą stronę, wybieramy projekt *Rick*, funkcję *Roll* i klikamy "+Create deployment"
+Wchodzimy na naszą stronę, wybieramy projekt *Krzysztof*, funkcję *Parostatek* i klikamy "+Create deployment"
 ![2](https://github.com/kjurkiew/RickRoll/assets/35111684/34368493-c7c2-4a3d-aca8-4533c3c7e460)
 W Entrypoint wpisujemy:
 ```
@@ -154,11 +154,11 @@ Wybieramy *Execute now* i wpisujemy
     "phoneNumber": "+48123456789"
 }
 ```
-I możemy cieszyć się Rick Rollem :D
+I możemy cieszyć się dźwiękiem Parostatku :whale:
 
 Odpowiedź z Twilio SDK znajdziemy w logach funkcji
 
-
+```
 {
   "twilioResponse": {
     "Sid": "CA1f810e5fd5e83cc193467...",
@@ -200,5 +200,5 @@ Odpowiedź z Twilio SDK znajdziemy w logach funkcji
     }
   }
 }
-
+```
 
