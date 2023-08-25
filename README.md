@@ -139,9 +139,13 @@ Wrzucamy spakowany plik code.targ.gz
 Zaznaczamy *Activate deployment after build*
 
 Ostatnią rzeczą, którą musimy zrobić, zanim będziemy mogli przetestować funkcję, jest dodanie niezbędnych zmiennych środowiskowych do strony Ustawienia funkcji. Zrobimy to klikając w *Settings*
+
 *TWILIO_ACCOUNTSID:* Identyfikator SID konta Twilio
+
 *TWILIO_AUTHTOKEN:* Token uwierzytelniania Twilio
+
 *TWILIO_PHONENUMBER:* Numer telefonu Twilio
+
 ![3](https://github.com/kjurkiew/RickRoll/assets/35111684/69f0f09e-01b0-4fa2-8683-c90b5d56fcb4)
 
 Wszystko już gotowe!
