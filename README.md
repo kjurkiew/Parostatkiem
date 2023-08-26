@@ -7,7 +7,7 @@ Ze względu na darmowe konto Twilio tuż przed uruchomieniem kodu prezentowany j
 https://github.com/kjurkiew/Parostatkiem/assets/35111684/5b8bed56-8c8b-44b1-a77a-00e33d78b0e3
 
 ## :page_with_curl: Warunki wstępne
-**Serwer** - Postawiłem na [mikr.us](https://mikr.us/?r=c9545d98) wybierając serwer 3.0. Wymogiem do sprawnego działania Appwrite jest co najmniej 2 GB ramu
+**Serwer** - Postawiłem na [mikr.us](https://mikr.us/?r=c9545d98) wybierając serwer 3.0. Wymogiem do sprawnego działania Appwrite jest co najmniej 2 GB ramu. Do serwera łączę się za pomocą [PuTTY](https://www.putty.org/)
 
 **Docker** - Zainstalowałem go korzystając z [dokumentacji dockera](https://docs.docker.com/engine/install/ubuntu/)
 
@@ -128,6 +128,7 @@ Bądź manualnie. W tym celu otwieramy katalog w którym znajduje się nasza fun
 tar -czf code.tar.gz --exclude code.tar.gz .
 ```
 
+Do przerzucenia pliku z serwera na mój komputer skorzystałem z programu [WinSCP](https://winscp.net/eng/download.php)
 
 Wchodzimy na naszą stronę, wybieramy projekt *Krzysztof*, funkcję *Parostatek* i klikamy "+Create deployment"
 ![2](https://github.com/kjurkiew/RickRoll/assets/35111684/34368493-c7c2-4a3d-aca8-4533c3c7e460)
