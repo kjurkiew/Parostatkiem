@@ -27,7 +27,7 @@ Aby zainstalować CLI Appwrite wystarczy wpisać:
 ```
 curl -sL https://appwrite.io/cli/install.sh | bash
 ```
-Cała dokumentacją CLI znajduje się [tutaj](https://appwrite.io/docs/command-line)
+Cała dokumentacja CLI znajduje się [tutaj](https://appwrite.io/docs/command-line)
 
 **Ważne!**
 Aby włączyć środowisko .NET dla Appwrite należy wejść do katalogu Appwrite, edytować plik .env np. za pomocą edytora nano, znaleźć w pliku .env zmienną środowiskową '_APP_FUNCTIONS_RUNTIMES' i do listy oddzielonej przecinkami dodać 'dotnet-6.0'.
