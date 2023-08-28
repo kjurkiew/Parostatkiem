@@ -136,7 +136,7 @@ W Entrypoint wpisujemy:
 ```
 src/Index.cs
 ```
-Wrzucamy spakowany plik code.targ.gz
+Wrzucamy spakowany plik *code.tar.gz*
 Zaznaczamy *Activate deployment after build*
 
 Ostatnią rzeczą, którą musimy zrobić, zanim będziemy mogli przetestować funkcję, jest dodanie niezbędnych zmiennych środowiskowych do strony Ustawienia funkcji. Zrobimy to klikając w *Settings*
